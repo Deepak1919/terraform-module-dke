@@ -20,11 +20,11 @@ variable "nodes_worker" {
   type        = list(string)
   default     = ["pke-worker"]
 }
-# variable "domain_name" {
-#   description = "Domain name suffix"
-#   type        = string
-#   default     = "cloud.itplatforma.com"
-# }
+variable "domain_name" {
+  description = "Domain name suffix"
+  type        = string
+  default     = "cloud.itplatforma.com"
+}
 variable "worker_tags" {
   description = "Optional tags to be added on worker nodes"
   type        = map(any)
